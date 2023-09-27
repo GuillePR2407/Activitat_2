@@ -1,4 +1,4 @@
-class Smartphone extends Dispositu{
+class Smartphone extends Dispositiu{
     private String sistemaOperatiu;
     private String hardware;
     private boolean accelerometre = false;
