@@ -25,30 +25,31 @@ class Smartphone extends Dispositiu{
     public void setSistemaOperatiu(String sistemaOperatiu){
         this.sistemaOperatiu=sistemaOperatiu;
     }
-    public String getSistemaOperatiu(String sistemaOperatiu){
+    public String getSistemaOperatiu(){
         return this.sistemaOperatiu;
     }
     public void setHardware(String hardware){
         this.hardware=hardware;
     }
-    public String getHardware(String hardware){
+    public String getHardware(){
         return this.hardware;
     }
     public void setAccelerometre(boolean accelerometre){
         this.accelerometre=accelerometre;
     }
-    public boolean getAccelerometre(boolean accelerometre){
+    public boolean getAccelerometre(){
         return this.accelerometre;
     }
     public void setGps(boolean gps){
         this.gps=gps;
     }
-    public boolean getGps(boolean gps){
+    public boolean getGps(){
         return this.gps;
     }
     @Override
     public String toString() {
-        String text = String.format("\n  Marca: %s\n Model: %s\n Sistema Operatiu: %s\n    Hardware: %s\n    Accelerometre: %s\n    GPS: %s\n  Preu: %s\n ",getMarca(), getModel(),getSistemaOperatiu(),getHardware(),getAccelerometre(),getGps(),getPreuBase());
+        String text = String.format("\n  Marca: %s\n Model: %s\n Sistema Operatiu: %s\n    Hardware: %s\n    Accelerometre: %s\n    GPS: %s\n  Preu: %s\n ",
+        getMarca(), getModel(), getSistemaOperatiu(),getHardware(),getAccelerometre(),getGps(),getPreuBase());
         return text;
     }
 }
