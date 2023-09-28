@@ -1,7 +1,10 @@
 public class Tablet extends Dispositiu{
     private int polsades;
     public Tablet(){}
-	public Tablet(int pos){setPolsades(pos);}
+	public Tablet(int pos){
+        super();
+        setPolsades(pos);
+    }
     public void setPolsades(int pos) {
         this.polsades = pos;
     }

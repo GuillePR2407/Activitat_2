@@ -5,10 +5,12 @@ public class AltreDispositiu extends Dispositiu {
 
     // Constructores
     public AltreDispositiu() {
+        super();
         descripcio = "No hi ha descripció per aquest dispositiu";
     }
 
     public AltreDispositiu(String descripcio) {
+        super();
         this.descripcio = descripcio;
     }
     

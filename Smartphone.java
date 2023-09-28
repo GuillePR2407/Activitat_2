@@ -6,16 +6,19 @@ class Smartphone extends Dispositiu{
 
 
     public Smartphone(String sistemaOperatiu, String hardware){
+        super();
         setSistemaOperatiu(sistemaOperatiu);
         setHardware(hardware);
     }
     public Smartphone(String sistemaOperatiu, String hardware, boolean accelerometre){
+        super();
         setSistemaOperatiu(sistemaOperatiu);
         setHardware(hardware);
         setAccelerometre(accelerometre);
     }
 
     public Smartphone(String sistemaOperatiu, String hardware, boolean accelerometre,boolean gps){
+        super();
         setSistemaOperatiu(sistemaOperatiu);
         setHardware(hardware);
         setAccelerometre(accelerometre);
