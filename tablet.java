@@ -1,6 +1,5 @@
 public class Tablet extends Dispositiu{
     private int polsades;
-    public Tablet(){}
 	public Tablet(String marca, String model, double preuBase,int pos){
         super(marca, model, preuBase);
         setPolsades(pos);
