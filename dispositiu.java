@@ -11,7 +11,7 @@
 class Dispositiu {
     private String marca;
     private String model;
-    private int preuBase;
+    private double preuBase;
     
     // Setter y Getter de Marca
     public String getMarca(){
@@ -30,15 +30,15 @@ class Dispositiu {
     }
 
      // Setter y Getter de PreuBase
-    public int getPreuBase(){
+    public double getPreuBase(){
         return this.preuBase;
     }
-    public void setPreuBase(int newPreuBase){
+    public void setPreuBase(double newPreuBase){
         this.preuBase = newPreuBase;
     }
 
     // Constructor
-    public Dispositiu(String newMarca, String newModel, int newPreuBase) {
+    public Dispositiu(String newMarca, String newModel, double newPreuBase) {
         setMarca(newMarca);
         setModel(newModel);
         setPreuBase(newPreuBase);
