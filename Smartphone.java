@@ -5,17 +5,20 @@ class Smartphone extends Dispositiu{
     private boolean gps = true;
 
 
-    public Smartphone(String sistemaOperatiu, String hardware){
+    public Smartphone(String marca, String model, double preuBase,String sistemaOperatiu, String hardware){
+        super(marca, model, preuBase);
         setSistemaOperatiu(sistemaOperatiu);
         setHardware(hardware);
     }
-    public Smartphone(String sistemaOperatiu, String hardware, boolean accelerometre){
+    public Smartphone(String marca, String model, double preuBase,String sistemaOperatiu, String hardware, boolean accelerometre){
+        super(marca, model, preuBase);
         setSistemaOperatiu(sistemaOperatiu);
         setHardware(hardware);
         setAccelerometre(accelerometre);
     }
 
-    public Smartphone(String sistemaOperatiu, String hardware, boolean accelerometre,boolean gps){
+    public Smartphone(String marca, String model, double preuBase,String sistemaOperatiu, String hardware, boolean accelerometre,boolean gps){
+        super(marca, model, preuBase);
         setSistemaOperatiu(sistemaOperatiu);
         setHardware(hardware);
         setAccelerometre(accelerometre);
