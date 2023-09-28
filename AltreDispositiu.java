@@ -4,14 +4,14 @@ public class AltreDispositiu extends Dispositiu {
     private String descripcio;
 
     // Constructores
-    public AltreDispositiu(String marca, String model, double preuBase,) {
+    public AltreDispositiu(String marca, String model, double preuBase) {
         super(marca, model, preuBase);
         descripcio = "No hi ha descripció per aquest dispositiu";
     }
 
     public AltreDispositiu(String marca, String model, double preuBase,String descripcio) {
         super(marca, model, preuBase);
-        this.descripcio = descripcio;
+        setDescripcio(descripcio);
     }
     
     // Métodos
