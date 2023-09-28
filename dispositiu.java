@@ -4,6 +4,8 @@
  * 
  * Se trata de una superclass, la cual se extiende en las clases:
  * Smartphone, Tablet y AltreDispositiu.
+ * 
+ * Tiene un constructor el cual define sus valores.
 */
 
 class Dispositiu {
@@ -33,5 +35,12 @@ class Dispositiu {
     }
     public void setPreuBase(int newPreuBase){
         this.preuBase = newPreuBase;
+    }
+
+    // Constructor
+    public Dispositiu(String newMarca, String newModel, int newPreuBase) {
+        setMarca(newMarca);
+        setModel(newModel);
+        setPreuBase(newPreuBase);
     }
 }
