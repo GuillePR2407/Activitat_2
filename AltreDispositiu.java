@@ -27,6 +27,6 @@ public class AltreDispositiu extends Dispositiu {
 
     @Override
     public String toString() {
-        return String.format("Marca: %s\n Model: %s\n Preu: %s\n Preu Final: %s\n Descripció: %s", getMarca(), getModel(), getPreuBase(), preuFinal(), getDescripcio());
+        return String.format("\n Marca: %s\n Model: %s\n Preu: %s\n Preu Final: %s\n Descripció: %s", getMarca(), getModel(), getPreuBase(), preuFinal(), getDescripcio());
     }
 }
