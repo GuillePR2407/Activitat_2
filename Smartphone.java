@@ -51,8 +51,22 @@ class Smartphone extends Dispositiu{
     }
     @Override
     public String toString() {
-        String text = String.format("\n  Marca: %s\n Model: %s\n Sistema Operatiu: %s\n    Hardware: %s\n    Accelerometre: %s\n    GPS: %s\n  Preu: %s\n ",
-        getMarca(), getModel(), getSistemaOperatiu(),getHardware(),getAccelerometre(),getGps(),getPreuBase());
+        String text = String.format("\n Marca: %s\n Model: %s\n Sistema Operatiu: %s\n Hardware: %s\n Accelerometre: %s\n GPS: %s\n Preu: %s\n Preu Final: %s\n",
+        getMarca(), getModel(), getSistemaOperatiu(),getHardware(),getAccelerometre(),getGps(),getPreuBase(),preuFinal());
         return text;
+    }
+
+    // Métodos
+    @Override
+    public double preuFinal() {
+        double preuFinal = getPreuBase() * 2;
+
+        if (getAccelerometre()) { // Si tiene acelerómetro, su precio sube un 10%
+            preuFinal += (getPreuBase() / 100 * 10);
+            if (getGps()) { // Si además tiene un gps, sube 5% más.
+                preuFinal += (getPreuBase() / 100 * 5);
+            }
+        }
+        return preuFinal;
     }
 }

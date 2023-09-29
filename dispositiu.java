@@ -43,4 +43,9 @@ class Dispositiu {
         setModel(newModel);
         setPreuBase(newPreuBase);
     }
+
+    // Métodos
+    public double preuFinal() {
+        return preuBase * 2;
+    }
 }
