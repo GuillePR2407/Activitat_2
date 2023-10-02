@@ -1,4 +1,4 @@
-class Smartphone extends Dispositiu{
+class Smartphone extends Dispositiu implements GammaAlta{
     private String sistemaOperatiu;
     private String hardware;
     private boolean accelerometre = false;
@@ -48,6 +48,11 @@ class Smartphone extends Dispositiu{
     }
     public boolean getGps(){
         return this.gps;
+    }
+
+    @Override
+    public boolean isGammaAlta() {
+        return this.preuFinal() > 700;
     }
     @Override
     public String toString() {
