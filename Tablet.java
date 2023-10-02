@@ -13,6 +13,9 @@ public class Tablet extends Dispositiu{
     public double getPolsades(){
         return polsades;
     }
+    public boolean isGammaAlta() {
+        return this.preuFinal() > 900;
+    }
     @Override
     public String toString() {
         String text = String.format("Marca: %s\n    Modelo: %s\n    Preu: %s\n    Polsades: %s ps" , getMarca(), getModel(), getPreuBase(), getPolsades());
