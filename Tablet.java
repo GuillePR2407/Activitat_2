@@ -18,7 +18,7 @@ public class Tablet extends Dispositiu{
     }
     @Override
     public String toString() {
-        String text = String.format("Marca: %s\n    Modelo: %s\n    Preu: %s\n    Polsades: %s ps" , getMarca(), getModel(), getPreuBase(), getPolsades());
+        String text = String.format("\n Marca: %s\n Modelo: %s\n Polsades: %s\n Preu: %s\n Preu Final: %s\n" , getMarca(), getModel(), getPolsades(), getPreuBase(), preuFinal());
         return text;
     }
 }
