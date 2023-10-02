@@ -48,4 +48,8 @@ class Dispositiu {
     public double preuFinal() {
         return preuBase * 2;
     }
+
+    public boolean isGammaAlta(){
+        return false;
+    }
 }

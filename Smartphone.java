@@ -50,6 +50,7 @@ class Smartphone extends Dispositiu implements GammaAlta{
         return this.gps;
     }
 
+    @Override
     public boolean isGammaAlta() {
         return this.preuFinal() > 700;
     }

@@ -13,6 +13,7 @@ public class Tablet extends Dispositiu{
     public double getPolsades(){
         return polsades;
     }
+    @Override
     public boolean isGammaAlta() {
         return this.preuFinal() > 900;
     }

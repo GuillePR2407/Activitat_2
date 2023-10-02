@@ -7,11 +7,11 @@ public class Main {
         List<Dispositiu> dispositius = new ArrayList<>();
         
         // Crear 5 dispositivos y añadirlos a la lista
-        dispositius.add(new AltreDispositiu("Rellotge Intel·ligent", "Xiaomi", 100));
-        dispositius.add(new Smartphone("OnePlus", "nord2", 300, "Android", "Hardware2", false, false));
+        dispositius.add(new AltreDispositiu("Xiaomi", "Mi Band", 100));
+        dispositius.add(new Smartphone("OnePlus", "Nord 2", 300, "Android", "Hardware2", false, false));
         dispositius.add(new Smartphone("iPhone", "19 PRO MAX", 500, "iOS", "Hardware3", true, true));
-        dispositius.add(new Tablet("Tablet", "Modelo4", 400, 10.1));
-        dispositius.add(new AltreDispositiu("Otro Dispositivo", "Modelo5", 200, "Descripción del otro dispositivo"));
+        dispositius.add(new Tablet("Samsung", "Galaxy Tab 12", 400, 10.1));
+        dispositius.add(new AltreDispositiu("Philips", "Mega Toaster 2000", 200, "Toasts good bread"));
 
         // Mostrar los dispositivos
         int contador = 1;
